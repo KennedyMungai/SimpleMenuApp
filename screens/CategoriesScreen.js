@@ -1,8 +1,9 @@
 import { FlatList } from 'react-native'
 import { CATEGORIES } from '../extra-files/dummy-data'
+import CategoryGridTile from '../components/CategoryGridTile'
 
 const renderCategoryItem = (item) => {
-	return
+	return <CategoryGridTile title={item.title} color={item.color} />
 }
 
 const CategoriesScreen = () => {
